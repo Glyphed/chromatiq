@@ -51,7 +51,7 @@ public class PlayFromWebCam : MonoBehaviour {
 		if (PlayerPrefs.GetString("FirstTime")!="nope")
 		{ 
 			PlayerPrefs.SetString("FirstTime", "nope"); 
-			NPBinding.UI.ShowAlertDialogWithSingleButton("Welcome", "First time user popup. \n \n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare dictum nibh, quis vehicula justo sodales at.", "Close", null);
+			NPBinding.UI.ShowAlertDialogWithSingleButton("Welcome", "Thank you for using Chromatiq, the real-time colour recognition app. ", "Close", null);
 		}
 
 		// Position UI elements in relation to device screen
@@ -199,7 +199,7 @@ public class PlayFromWebCam : MonoBehaviour {
             "Ok",
             "Terms of Use"
         };
-    	NPBinding.UI.ShowAlertDialogWithMultipleButtons("About Camera Chromatica", "This is a sample message. \n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare dictum nibh, quis vehicula justo sodales at. Curabitur tincidunt sodales orci sit amet vulputate. Praesent cursus quam a urna feugiat volutpat. Proin ut ante id lacus pharetra hendrerit. Donec ac ante eu neque posuere scelerisque. Pellentesque quis pretium eros. Donec pellentesque, sem id pellentesque vestibulum, risus nunc dapibus nulla, eget sollicitudin justo sem sit amet lacus.", _buttons, onButtonPressed);
+    	NPBinding.UI.ShowAlertDialogWithMultipleButtons("About Chromatiq", "Chromatiq is the real-time colour recognition app, intended primarily to be assistive app for persons with the colour vision deficiency. \n\n App features: \n • sampler slider to increase/decrease the sampling area \n • colour lock, enabling you to temporarily lock the sampled colour \n • ability to copy colour hex value to the device clipboard \n\n Thank you for using Chromatiq! \n\n\n ©2016 Predrag Koncar \n\n Chromatiq version 1.0", _buttons, onButtonPressed);
     }
 
     private void onButtonPressed(string _buttonPressed)
@@ -212,7 +212,7 @@ public class PlayFromWebCam : MonoBehaviour {
 
     public void showTerms()
     {
-    	NPBinding.UI.ShowAlertDialogWithSingleButton("Terms of Use", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare dictum nibh, quis vehicula justo sodales at. Curabitur tincidunt sodales orci sit amet vulputate. Praesent cursus quam a urna feugiat volutpat. Proin ut ante id lacus pharetra hendrerit. Donec ac ante eu neque posuere scelerisque. Pellentesque quis pretium eros. Donec pellentesque, sem id pellentesque vestibulum, risus nunc dapibus nulla, eget sollicitudin justo sem sit amet lacus.", "Close", null);
+    	NPBinding.UI.ShowAlertDialogWithSingleButton("Terms of Use", " Terms of use temporary text. \n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare dictum nibh, quis vehicula justo sodales at. Curabitur tincidunt sodales orci sit amet vulputate. Praesent cursus quam a urna feugiat volutpat. Proin ut ante id lacus pharetra hendrerit. Donec ac ante eu neque posuere scelerisque. Pellentesque quis pretium eros. Donec pellentesque, sem id pellentesque vestibulum, risus nunc dapibus nulla, eget sollicitudin justo sem sit amet lacus.", "Close", null);
     }
 
     public void pauseSwitch ()
